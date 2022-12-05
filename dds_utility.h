@@ -2,6 +2,7 @@
 #define DDS_UTILITY_H_INCLUDED
 
 #include <dlib/geometry/rectangle.h>
+#include <dlib/image_processing/full_object_detection.h>
 #include <opencv2/core.hpp>
 
 using namespace std;
@@ -16,6 +17,8 @@ using namespace cv;
  */
 void calculate_ear(vector<Point>& eye, double* ear);
 
+void calculate_ear2(dlib::full_object_detection& shape, double* ear);
+
 /**
  *  Convert rectanle variables.
  *  Convert CV rect variable to DLIB rect variable.
@@ -24,5 +27,7 @@ void calculate_ear(vector<Point>& eye, double* ear);
  *  @param pos (Parameter) CV rect index to be converted to DLIB rect.
  */
 void convert_rect_CV2DLIB(vector<Rect>& cv_rect, vector<dlib::rectangle>& dlib_rect, int pos);
+
+cv::Point convert_point_DLIB2CV(dlib::point& dlib_point);
 
 #endif // !DDS_UTILITY_H_INCLUDED

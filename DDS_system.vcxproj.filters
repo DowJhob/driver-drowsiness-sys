@@ -24,7 +24,7 @@
     <ClCompile Include="dds_utility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\dlib-19.19\source\dlib\all\source.cpp">
+    <ClCompile Include="..\..\..\..\..\dlib\dlib\all\source.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

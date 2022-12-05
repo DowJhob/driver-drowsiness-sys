@@ -36,7 +36,7 @@ private:
     Point temp_xy_cv;           /**< Temporary CV variable to store (x,y) point.*/
 
     CascadeClassifier face_detect;  /**< Face detection object.*/
-    dlib::shape_predictor face_landmarks; /**< Face landmark object.*/
+    dlib::shape_predictor eye_landmarks; /**< Face landmark object.*/
 public:
     /**
      *  Constructor.
